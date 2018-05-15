@@ -4,7 +4,7 @@ const theme = {
   colors: {
     bkg: '#d4d3d1',
     blue: '#4c627b',
-    orange: '#da732d',
+    orange: '#d68148',
     text: '#384d54',
   }
 }
