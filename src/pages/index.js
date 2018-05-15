@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Nav from '../parts/Nav';
 
 const Container = styled.div`
   margin: 3rem auto;
@@ -13,5 +14,6 @@ const Container = styled.div`
 export default () => (
   <Container>
     <h1>Neato</h1>
+    <Nav />
   </Container>
 );
