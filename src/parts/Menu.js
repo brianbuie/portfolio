@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from './theme';
 import Link from 'gatsby-link';
-import LogoLockupSVG from '../assets/logolockup.svg';
+// import LogoLockupSVG from '../assets/logolockup.svg';
+import Lockup from './Lockup';
 import Github from '../assets/github.svg';
 import LinkedIn from '../assets/linkedin.svg';
 
@@ -55,9 +56,10 @@ const MenuRight = styled.div`
 const Menu = () => (
   <nav>
     <Link to="/">
-      <LogoContainer>
+      {/*<LogoContainer>
         <LogoLockupSVG />
-      </LogoContainer>
+      </LogoContainer>*/}
+      <Lockup />
     </Link>
     <MenuRight>
       <a href="https://github.com/brianbuie" target="_blank">
