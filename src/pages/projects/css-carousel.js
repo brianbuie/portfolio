@@ -5,7 +5,13 @@ import Video from '../../parts/ui/Video';
 import Image from '../../parts/ui/Image';
 
 const Header = styled.header`
-  background-color: #ccc;
+  background: url('https://res.cloudinary.com/brianbuie/image/upload/f_auto/v1526869101/carousel-background_mdjz8x.png');
+  background-size: cover;
+  margin-bottom: 3rem;
+  h1 {
+    color: white;
+    text-shadow: 0 0 20px black;
+  }
 `;
 
 export default () => (
@@ -24,13 +30,17 @@ export default () => (
         <Video publicId="css-carousel-demo_pfefp3" />
         <figcaption>The CSS Carousel being used on the <a href="https://www.amctheatres.com/amc-educates" target="_blank">AMC Educates page</a>.</figcaption>
       </figure>
-      <p>By using hidden radio buttons, the carousel position and active item styles are determined by which radio button was selected. Each movie poster was wrapped in a label for the corresponding radio input, so when a poster was clicked, that radio button would be selected and trigger CSS transitions between states.</p>
+      <p>By using hidden radio buttons, the carousel position and active item styles are determined by which radio button was selected. Each movie poster was wrapped in a label for the corresponding radio input, so when a poster was clicked, that radio button would be selected and trigger CSS transitions between states. <a href="https://github.com/brianbuie/cssCarousel/blob/master/csscarousel.css" target="_blank">Check out the CSS →</a></p>
     </section>
     <section>
       <h2>The Pros and Cons</h2>
       <h3>Responsiveness</h3>
       <p><strong>Pro:</strong> The sizes for everything were based on aspect ratios and percentages, so the carousel scales down nicely on mobile.</p>
-      <p><strong>Con:</strong> CSS Touch events can't be used to change selected inputs, so swiping on mobile to advance the carousel doesn't work. This is the main reason we don't use the carousel in more areas, since the main React-based carousel does support swiping.</p>
+      <figure>
+        <Video publicId="responsive-demo_tpba5c" transforms="e_accelerate:35,eo_11,so_2" />
+        <figcaption>Wow, so responsive</figcaption>
+      </figure>
+      <p><strong>Con:</strong> CSS Touch events can't be used to change selected inputs, so swiping on mobile to advance the carousel doesn't work.</p>
     </section>
     <section>
       <h3>Flexibility</h3>
@@ -44,7 +54,11 @@ export default () => (
     <section>
       <h3>Compatibility</h3>
       <p><strong>Pro:</strong> Since there's no Javascript involved, we didn't run into many issues with browser support. Although, the whole site uses React, so older versions of IE aren't supported anyways.</p>
-      <p><strong>Con:</strong> Using radio buttons is a bit of a hack, so the markup is probably confusing for scrapers and screenreaders.</p>
+      <p><strong>Con:</strong> Using radio buttons is a bit of a hack, so the markup is probably confusing for crawlers and screenreaders.</p>
+    </section>
+    <section>
+      <h2>Final Thoughts</h2>
+      <p>I tend to reach for javascript at the first sign of complexity or interactivity, so it was really fun and challenging to come up with a pure CSS solution for this. While I wouldn't use radio buttons like this again in the future, I'm really proud of how flexible and responsive the carousel is. Using nothing but percentages meant no pixels were harmed in the making of this project!</p>
     </section>
   </ProjectPage>
 );

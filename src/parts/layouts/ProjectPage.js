@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from './MainLayout';
+import Author from '../Author';
 
 const Styles = styled.div`
   header {
+    padding: 5rem 1.5rem;
+  }
+
+  h1, h2 {
     text-align: center;
-    padding: 3rem 1.5rem;
   }
 
   section {
@@ -20,6 +24,7 @@ const ProjectPage = ({ children }) => (
   <Layout>
     <Styles>
       {children}
+      <Author />
     </Styles>
   </Layout>
 );

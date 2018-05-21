@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import theme from '../theme';
 import Menu from '../Menu';
+import Footer from '../Footer';
 
 injectGlobal`
   * {
@@ -37,6 +38,16 @@ injectGlobal`
     font-style: italic;
     text-align: center;
   }
+
+  strong {
+    font-family: 'Montserrat';
+    color: ${theme.colors.blue};
+  }
+
+  a {
+    color: ${theme.colors.orange};
+    text-decoration: none;
+  }
 `;
 
 const Body = styled.div`
@@ -49,21 +60,13 @@ const Content = styled.main`
   flex-grow: 1;
 `;
 
-const Footer = styled.footer`
-  text-align: center;
-  font-size: 0.8rem;
-  opacity: 0.7;
-`;
-
 const Layout = ({ children }) => (
   <Body>
     <Menu />
     <Content>
       {children}
     </Content>
-    <Footer>
-      <p>&copy; {new Date().getFullYear()}</p>
-    </Footer>
+    <Footer />
   </Body>
 );
 
