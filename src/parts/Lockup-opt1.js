@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from './theme';
-import LogoLockupSVG from '../assets/logolockup.svg';
+import theme from '@parts/theme';
+import LogoLockupSVG from '@assets/logolockup.svg';
 
 const LogoContainer = styled.div`
   position: fixed;

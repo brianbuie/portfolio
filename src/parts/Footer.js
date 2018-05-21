@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from './theme';
-import Github from '../assets/github.svg';
-import LinkedIn from '../assets/linkedin.svg';
-import Email from '../assets/email.svg';
+import theme from '@parts/theme';
+import Github from '@assets/github.svg';
+import LinkedIn from '@assets/linkedin.svg';
+import Email from '@assets/email.svg';
 
 const Container = styled.footer`
   padding: 3rem 0 1rem;

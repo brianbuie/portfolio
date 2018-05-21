@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import theme from '../theme';
-import Menu from '../Menu';
-import Footer from '../Footer';
+import theme from '@parts/theme';
+import Menu from '@parts/Menu';
+import Footer from '@parts/Footer';
 
 injectGlobal`
   * {

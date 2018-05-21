@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from './theme';
-import Buoy from '../assets/buoy.svg';
+import theme from '@parts/theme';
+import Buoy from '@assets/buoy.svg';
 
 const Container = styled.div`
   position: fixed;

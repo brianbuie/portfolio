@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from './MainLayout';
-import Author from '../Author';
+import Layout from '@parts/layouts/MainLayout';
+import Author from '@parts/Author';
 
 const Styles = styled.div`
   header {

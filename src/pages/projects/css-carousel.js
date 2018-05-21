@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectPage from '../../parts/layouts/ProjectPage';
-import Video from '../../parts/ui/Video';
-import Image from '../../parts/ui/Image';
+import theme from '@parts/theme';
+import ProjectPage from '@parts/layouts/ProjectPage';
+import Video from '@parts/ui/Video';
+import Image from '@parts/ui/Image';
 
 const Header = styled.header`
+  background-color: ${theme.colors.blue};
   background: url('https://res.cloudinary.com/brianbuie/image/upload/f_auto/v1526869101/carousel-background_mdjz8x.png');
   background-size: cover;
   margin-bottom: 3rem;
@@ -58,7 +60,7 @@ export default () => (
     </section>
     <section>
       <h2>Final Thoughts</h2>
-      <p>I tend to reach for javascript at the first sign of complexity or interactivity, so it was really fun and challenging to come up with a pure CSS solution for this. While I wouldn't use radio buttons like this again in the future, I'm really proud of how flexible and responsive the carousel is. Using nothing but percentages meant no pixels were harmed in the making of this project!</p>
+      <p>I tend to reach for javascript at the first sign of complexity or interactivity, so it was really fun and challenging to come up with a pure CSS solution for this. While I wouldn't use radio buttons like this again in the future, I'm really proud of how flexible and responsive the carousel is. Only using percentages meant no pixels were harmed in the making of this project!</p>
     </section>
   </ProjectPage>
 );
