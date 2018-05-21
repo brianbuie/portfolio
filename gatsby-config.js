@@ -7,7 +7,7 @@ module.exports = {
       options: {
         fonts: [
           'Khula',
-          'Montserrat\:800i'
+          'Montserrat\:700i'
         ]
       }
     }

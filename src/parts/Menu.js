@@ -2,30 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from './theme';
 import Link from 'gatsby-link';
-// import LogoLockupSVG from '../assets/logolockup.svg';
-import Lockup from './Lockup';
+import Lockup from './Lockup-opt2';
 import Github from '../assets/github.svg';
 import LinkedIn from '../assets/linkedin.svg';
-
-const LogoContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px;
-  svg {
-    width: 100%;
-    height: 100%;
-    .letter {
-      fill: ${theme.colors.bkg};
-    }
-    .background {
-      fill: ${theme.colors.blue};
-    }
-    .buoy {
-      fill: ${theme.colors.orange};
-    }
-  }
-`;
 
 const MenuRight = styled.div`
   display: flex;
@@ -56,9 +35,6 @@ const MenuRight = styled.div`
 const Menu = () => (
   <nav>
     <Link to="/">
-      {/*<LogoContainer>
-        <LogoLockupSVG />
-      </LogoContainer>*/}
       <Lockup />
     </Link>
     <MenuRight>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Layout from '../parts/Layout';
+import Layout from '../parts/layouts/MainLayout';
 import Link from 'gatsby-link';
 
 const Container = styled.div`
