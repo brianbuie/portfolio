@@ -1,0 +1,20 @@
+Articles/Projects
+  MutationObserver React Router
+  Using cookies & redux for simple global settings
+  BucketJunkie
+  Rideforecast.ai
+  Scripted.fun
+
+MVP
+  Progressive image/video loading
+  Page titles & meta tags
+  google analytics
+  contact form
+
+Features
+  social sharing buttons
+  tag filtering
+  separate preview types
+  projects carousel under posts
+  figure out "reader view available" requirements
+  Disqus comments

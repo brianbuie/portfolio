@@ -32,7 +32,7 @@ const ReadMore = styled(Link)`
 const ProjectPreview = ({ title, slug, image, description, tags }) => (
   <Container>
     <Link to={`/projects/${slug}`}>
-      <Image publicId={image} transforms="c_fill,f_auto,g_center,w_400,h_250" alt={title} />
+      <Image id={image} transforms="c_fill,f_auto,g_center,w_400,h_250" alt={title} />
     </Link>
     <Content>
       <h3>{title}</h3>

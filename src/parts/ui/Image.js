@@ -7,7 +7,7 @@ const IMG = styled.img`
 `;
 
 const Image = props => (
-  <IMG src={`https://res.cloudinary.com/brianbuie/image/upload/${props.transforms ? props.transforms + '/' : ''}v1526861374/${props.publicId}.jpg`} {...props}/>
+  <IMG src={`https://res.cloudinary.com/brianbuie/image/upload/${props.transforms ? props.transforms + '/' : ''}v1526861374/${props.id}.jpg`} {...props}/>
 );
 
 export default Image;

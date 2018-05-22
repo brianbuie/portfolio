@@ -4,28 +4,18 @@ import theme from '@parts/theme';
 import ProjectPage from '@parts/layouts/ProjectPage';
 import Video from '@parts/ui/Video';
 import Image from '@parts/ui/Image';
+import Hero from '@parts/ui/Hero';
 
-const HeaderFallback = styled.div`
-  background-color: black;
-`;
-
-const Header = styled.header`
-  background: url('https://res.cloudinary.com/brianbuie/image/upload/f_auto/v1526869101/carousel-background_mdjz8x.png');
-  background-size: cover;
-  margin-bottom: 3rem;
-  h1 {
-    color: white;
-    text-shadow: 0 0 20px black;
-  }
+const Headline = styled.h1`
+  color: white;
+  text-shadow: 0 0 20px black;
 `;
 
 export default ({ location }) => (
-  <ProjectPage location={location} >
-    <HeaderFallback>
-      <Header>
-        <h1>CSS Carousel</h1>
-      </Header>
-    </HeaderFallback>
+  <ProjectPage location={location}>
+    <Hero image="carousel-background_mdjz8x">
+      <Headline>CSS Carousel</Headline>
+    </Hero>
     <section>
       <h3>Background</h3>
       <p>When building out the content pages on AMCTheatres.com, we needed a way to display the movie poster carousel found on other parts of the site, but with custom content under each film.</p>
@@ -34,7 +24,7 @@ export default ({ location }) => (
     <section>
       <h3>CSS To the Rescue!</h3>
       <figure>
-        <Video publicId="css-carousel-demo_pfefp3" />
+        <Video id="css-carousel-demo_pfefp3" />
         <figcaption>The CSS Carousel being used on the <a href="https://www.amctheatres.com/amc-educates" target="_blank">AMC Educates page</a>.</figcaption>
       </figure>
       <p>By using hidden radio buttons, the carousel position and active item styles are determined by which radio button was selected. Each movie poster was wrapped in a label for the corresponding radio input, so when a poster was clicked, that radio button would be selected and trigger CSS transitions between states. <a href="https://github.com/brianbuie/cssCarousel/blob/master/csscarousel.css" target="_blank">Check out the CSS →</a></p>
@@ -44,7 +34,7 @@ export default ({ location }) => (
       <h3>Responsiveness</h3>
       <p><strong>Pro:</strong> The sizes for everything were based on aspect ratios and percentages, so the carousel scales down nicely on mobile.</p>
       <figure>
-        <Video publicId="responsive-demo_tpba5c" transforms="e_accelerate:35,eo_11,so_2" />
+        <Video id="responsive-demo_tpba5c" transforms="e_accelerate:35,eo_11,so_2" />
         <figcaption>Wow, so responsive</figcaption>
       </figure>
       <p><strong>Con:</strong> CSS Touch events can't be used to change selected inputs, so swiping on mobile to advance the carousel doesn't work.</p>
@@ -53,7 +43,7 @@ export default ({ location }) => (
       <h3>Flexibility</h3>
       <p><strong>Pro:</strong> Since the sizes are fluid, we've been able to use it for other items that aren't the same size as movie posters.</p>
       <figure>
-        <Image publicId="amc-history_x1gemx" transforms="c_scale,f_auto,q_100,w_850" alt="AMC History" />
+        <Image id="amc-history_x1gemx" transforms="c_scale,f_auto,q_100,w_850" alt="AMC History" />
         <figcaption>A different aspect ratio for the content on the <a href="https://www.amctheatres.com/corporate/amc-history" target="_blank">AMC History page</a>.</figcaption>
       </figure>
       <p><strong>Con:</strong> By using a lot of "nth-type" pseudo-selectors, the HTML is extremely rigid. It's really easy to accidentally misplace an element and break the whole carousel.</p>

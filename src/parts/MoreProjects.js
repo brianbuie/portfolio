@@ -14,14 +14,11 @@ const Container = styled.div`
 
 const MoreProjects = ({ location }) => {
   const activeIndex = projects.findIndex(project => project.slug === location.pathname.replace('/projects/', ''));
-  const firstIndex = activeIndex !== 0 ? activeIndex - 1 : projects.length - 1;
-  const secondIndex = activeIndex !== projects.length - 1 ? activeIndex + 1 : 0;
-  const thirdIndex = secondIndex + 1 !== activeIndex ? secondIndex + 1 : null;
+  const availableProjects = projects.filter(project => project.slug !== location.pathname.replace('/projects/', ''));
+  if (!availableProjects.length) return null;
   return (
     <Container>
-      <ProjectPreview {...projects[firstIndex]} />
-      <ProjectPreview {...projects[secondIndex]} />
-      {thirdIndex && thirdIndex !== firstIndex && thirdIndex !== secondIndex && <ProjectPreview {...projects[thirdIndex]}/>}
+      {availableProjects.map(project => <ProjectPreview key={project.slug} {...project} />)}
     </Container>
   );
 }

@@ -7,25 +7,18 @@ const projects = [
     tags: ['CSS']
   },
   {
-    title: 'BucketJunkie',
-    slug: 'bucketjunkie',
-    description: 'NBA Fantasy league.',
+    title: '2nd Project',
+    slug: 'css-carousel2',
+    description: 'A 2nd Project.',
     image: 'css-carousel-preview_xghn1q',
-    tags: ['React', 'Node', 'Express', 'MongoDB']
+    tags: ['CSS', 'React']
   },
   {
-    title: 'Rideforecast.ai',
-    slug: 'ride-forecast',
-    description: '"It\'s like Tindr for weather conditions." Using AI to learn what type of weather you like riding your bike in.',
+    title: '3rd Project',
+    slug: 'css-carousel3',
+    description: 'A 2nd Project.',
     image: 'css-carousel-preview_xghn1q',
-    tags: ['React', 'Next.js', 'Node']
-  },
-  {
-    title: 'Scripted.fun',
-    slug: 'scripted-fun',
-    description: 'A fun game of "Guess who said it" for quotes from The Office.',
-    image: 'css-carousel-preview_xghn1q',
-    tags: ['React', 'Node', 'Express', 'MongoDB']
+    tags: ['CSS', 'React']
   }
 ];
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '@parts/theme';
 import ContactMe from '@parts/ContactMe';
+import Image from '@parts/ui/Image';
 
 const Container = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ const Author = ({  }) => (
   <section>
     <Container>
       <LeftColumn>
-        <img src="http://res.cloudinary.com/brianbuie/image/upload/f_auto,w_200,h_200,r_max/v1526870247/profile-pic-cropped-v2_baex4c.jpg" alt="Handsome Man"/>
+        <Image id="profile-pic-cropped-v2_baex4c" transforms="f_auto,w_200,h_200,r_max" alt="Handsome Man" />
       </LeftColumn>
       <RightColumn>
         <h4>People call me Brian</h4>

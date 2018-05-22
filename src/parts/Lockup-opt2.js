@@ -5,6 +5,7 @@ import Buoy from '@assets/buoy.svg';
 
 const Container = styled.div`
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 80px;

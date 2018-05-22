@@ -5,6 +5,7 @@ import LogoLockupSVG from '@assets/logolockup.svg';
 
 const LogoContainer = styled.div`
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 250px;
