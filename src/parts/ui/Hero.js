@@ -24,10 +24,8 @@ const HeaderImage = styled(Image)`
 
 const Hero = ({ image, children }) => (
   <Header>
-    <HeaderImage id={image} transforms="f_auto" />
-    <Content>
-      {children}
-    </Content>
+    <HeaderImage id={image} transforms={['c_fill', 'g_center']} width={1200} height={600} />
+    <Content>{children}</Content>
   </Header>
 );
 

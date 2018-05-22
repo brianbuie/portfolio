@@ -31,16 +31,26 @@ const RightColumn = styled.div`
   }
 `;
 
-const Author = ({  }) => (
+const Author = ({}) => (
   <section>
     <Container>
       <LeftColumn>
-        <Image id="profile-pic-cropped-v2_baex4c" transforms="f_auto,w_200,h_200,r_max" alt="Handsome Man" />
+        <Image
+          id="profile-pic-cropped-v2_baex4c"
+          transforms={['r_max']}
+          width={200}
+          height={200}
+          extension="png"
+          alt="Handsome Man"
+        />
       </LeftColumn>
       <RightColumn>
         <h4>People call me Brian</h4>
-        <p>I'm a Kansas City based full-stack Javascript developer. On the rare occasion I'm not programming, I'm probably riding my bike or eating pizza (still trying to figure out how to do those at the same time).</p>
-        <ContactMe justify="flex-start"/>
+        <p>
+          I'm a Kansas City based full-stack Javascript developer. On the rare occasion I'm not programming, I'm probably riding
+          my bike or eating pizza (still trying to figure out how to do those at the same time).
+        </p>
+        <ContactMe justify="flex-start" />
       </RightColumn>
     </Container>
   </section>

@@ -16,7 +16,8 @@ const Container = styled.div`
 const Content = styled.div`
   padding: 0 1rem 0.5rem;
 
-  h3, p {
+  h3,
+  p {
     margin: 0.5rem 0;
   }
 
@@ -32,11 +33,13 @@ const ReadMore = styled(Link)`
 const ProjectPreview = ({ title, slug, image, description, tags }) => (
   <Container>
     <Link to={`/projects/${slug}`}>
-      <Image id={image} transforms="c_fill,f_auto,g_center,w_400,h_250" alt={title} />
+      <Image id={image} transforms={['c_fill', 'g_center']} width={400} height={250} alt={title} />
     </Link>
     <Content>
       <h3>{title}</h3>
-      <p>{description} <ReadMore to={`/projects/${slug}`}>Read More →</ReadMore></p>
+      <p>
+        {description} <ReadMore to={`/projects/${slug}`}>Read More →</ReadMore>
+      </p>
       {tags.map(tag => <Tag title={tag} key={tag} />)}
     </Content>
   </Container>
