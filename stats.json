@@ -1,12 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-542b07a14a138d3af2da.js",
-      "component---src-pages-index-js-542b07a14a138d3af2da.js.map"
-    ],
-    "path---test": [
-      "path---test-a0e39f21c11f6a62c5ab.js",
-      "path---test-a0e39f21c11f6a62c5ab.js.map"
+      "component---src-pages-index-js-a110269c12cf441b4b4f.js",
+      "component---src-pages-index-js-a110269c12cf441b4b4f.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -16,13 +12,17 @@
       "commons-d49a2d1560d8d7ccfc79.js",
       "commons-d49a2d1560d8d7ccfc79.js.map"
     ],
-    "app": [
-      "app-06bd8f9aea73987ea10c.js",
-      "app-06bd8f9aea73987ea10c.js.map"
+    "component---src-pages-projects-css-carousel-js": [
+      "component---src-pages-projects-css-carousel-js-18580c3d790bd4c70f64.js",
+      "component---src-pages-projects-css-carousel-js-18580c3d790bd4c70f64.js.map"
     ],
-    "component---src-pages-test-js": [
-      "component---src-pages-test-js-1abda57a249a6f46917f.js",
-      "component---src-pages-test-js-1abda57a249a6f46917f.js.map"
+    "app": [
+      "app-acd7e922d934e5e764cf.js",
+      "app-acd7e922d934e5e764cf.js.map"
+    ],
+    "path---projects-css-carousel": [
+      "path---projects-css-carousel-a0e39f21c11f6a62c5ab.js",
+      "path---projects-css-carousel-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
