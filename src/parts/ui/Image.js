@@ -2,10 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Visibility from 'react-visibility-sensor';
 
-const Clip = styled.span`
-  overflow: hidden;
-`;
-
 const IMG = styled.img`
   width: 100%;
   height: auto;
@@ -34,10 +30,8 @@ class Image extends React.Component {
   };
 
   render = () => (
-    <Visibility partialVisibility={true} onChange={this.onChange}>
-      <Clip>
-        <IMG src={this.makeURL()} {...this.props} {...this.state} />
-      </Clip>
+    <Visibility partialVisibility={true} delayedCall={true} onChange={this.onChange}>
+      <IMG src={this.makeURL()} {...this.props} {...this.state} />
     </Visibility>
   );
 }

@@ -13,7 +13,7 @@ const Headline = styled.h1`
 
 export default ({ location }) => (
   <ProjectPage location={location}>
-    <Hero image="carousel-background_mdjz8x">
+    <Hero image="carousel-background_mdjz8x" fallbackColor="#000">
       <Headline>CSS Carousel</Headline>
     </Hero>
     <section>

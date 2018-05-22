@@ -6,6 +6,7 @@ const Header = styled.header`
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+  background-color: ${props => props.fallbackColor || 'transparent'};
 `;
 
 const Content = styled.div`
@@ -19,11 +20,14 @@ const HeaderImage = styled(Image)`
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  object-fit: cover;
 `;
 
-const Hero = ({ image, children }) => (
-  <Header>
+const Hero = ({ image, children, fallbackColor }) => (
+  <Header fallbackColor={fallbackColor}>
     <HeaderImage id={image} transforms={['c_fill', 'g_center']} width={1200} height={600} />
     <Content>{children}</Content>
   </Header>
