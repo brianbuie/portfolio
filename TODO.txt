@@ -1,6 +1,7 @@
 Articles/Projects
   MutationObserver React Router
   Using cookies & redux for simple global settings
+  progressive image and video loading with cloudinary
   BucketJunkie
   Rideforecast.ai
   Scripted.fun

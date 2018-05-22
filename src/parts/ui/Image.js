@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Visibility from 'react-visibility-sensor';
 
+const Clip = styled.span`
+  overflow: hidden;
+`;
+
 const IMG = styled.img`
   width: 100%;
   height: auto;
   filter: ${props => (props.loaded ? 'none' : 'blur(5px)')};
-  overflow: hidden;
 `;
 
 class Image extends React.Component {
@@ -18,7 +21,7 @@ class Image extends React.Component {
     const { width, height, id, extension } = this.props;
     const transforms = ['f_auto'];
     if (!this.state.loaded) {
-      transforms.push('q_10', `w_${Math.floor(width / 50)}`, `h_${Math.floor(height / 50)}`);
+      transforms.push('q_10', `w_${Math.ceil(width / 50)}`, `h_${Math.ceil(height / 50)}`);
     } else {
       transforms.push(`w_${width}`, `h_${height}`);
     }
@@ -30,14 +33,13 @@ class Image extends React.Component {
     if (isVisible && !this.state.loaded) this.setState({ loaded: true });
   };
 
-  render = () => {
-    const { width, height, ...passThrough } = this.props;
-    return (
-      <Visibility partialVisibility={true} onChange={this.onChange}>
-        <IMG src={this.makeURL()} {...passThrough} {...this.state} />
-      </Visibility>
-    );
-  };
+  render = () => (
+    <Visibility partialVisibility={true} onChange={this.onChange}>
+      <Clip>
+        <IMG src={this.makeURL()} {...this.props} {...this.state} />
+      </Clip>
+    </Visibility>
+  );
 }
 
 export default Image;

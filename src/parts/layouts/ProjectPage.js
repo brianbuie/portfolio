@@ -9,7 +9,8 @@ const Styles = styled.div`
     padding: 5rem 1.5rem;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     text-align: center;
   }
 
@@ -18,6 +19,10 @@ const Styles = styled.div`
     padding: 1.5rem;
     padding-bottom: 0;
     margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
   }
 `;
 

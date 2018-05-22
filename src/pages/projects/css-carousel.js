@@ -31,7 +31,7 @@ export default ({ location }) => (
     <section>
       <h3>CSS To the Rescue!</h3>
       <figure>
-        <Video id="css-carousel-demo_pfefp3" />
+        <Video id="css-carousel-demo_pfefp3" width={640} height={480} />
         <figcaption>
           The CSS Carousel being used on the{' '}
           <a href="https://www.amctheatres.com/amc-educates" target="_blank">
@@ -56,7 +56,7 @@ export default ({ location }) => (
         nicely on mobile.
       </p>
       <figure>
-        <Video id="responsive-demo_tpba5c" transforms="e_accelerate:35,eo_11,so_2" />
+        <Video id="responsive-demo_tpba5c" width={1080} height={664} transforms={['e_accelerate:35', 'eo_11', 'so_2']} />
         <figcaption>Wow, so responsive</figcaption>
       </figure>
       <p>
