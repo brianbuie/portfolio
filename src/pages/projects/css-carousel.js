@@ -19,8 +19,8 @@ const Header = styled.header`
   }
 `;
 
-export default () => (
-  <ProjectPage>
+export default ({ location }) => (
+  <ProjectPage location={location} >
     <HeaderFallback>
       <Header>
         <h1>CSS Carousel</h1>

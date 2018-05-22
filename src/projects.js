@@ -7,25 +7,25 @@ const projects = [
     tags: ['CSS']
   },
   {
-    title: 'Test Project',
-    slug: 'sadfasdf',
-    description: 'Using radio buttons and CSS to add interactivity when Javascript isn\'t available.',
+    title: 'BucketJunkie',
+    slug: 'bucketjunkie',
+    description: 'NBA Fantasy league.',
     image: 'css-carousel-preview_xghn1q',
-    tags: ['CSS']
+    tags: ['React', 'Node', 'Express', 'MongoDB']
   },
   {
-    title: 'Test Project',
-    slug: 'sadfasasdfdf',
-    description: 'Using radio buttons and CSS to add interactivity when Javascript isn\'t available. asdfas adf asdfasdf asds asdsdf',
+    title: 'Rideforecast.ai',
+    slug: 'ride-forecast',
+    description: '"It\'s like Tindr for weather conditions." Using AI to learn what type of weather you like riding your bike in.',
     image: 'css-carousel-preview_xghn1q',
-    tags: ['CSS']
+    tags: ['React', 'Next.js', 'Node']
   },
   {
-    title: 'Test Project',
-    slug: 'sadfaasdfasdfsdf',
-    description: 'Using radio buttons and CSS to add interactivity when Javascript isn\'t available.',
+    title: 'Scripted.fun',
+    slug: 'scripted-fun',
+    description: 'A fun game of "Guess who said it" for quotes from The Office.',
     image: 'css-carousel-preview_xghn1q',
-    tags: ['CSS']
+    tags: ['React', 'Node', 'Express', 'MongoDB']
   }
 ];
 

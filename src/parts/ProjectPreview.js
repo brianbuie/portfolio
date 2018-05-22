@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 import Image from '@parts/ui/Image';
+import Tag from '@parts/ui/Tag';
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  padding: 0 1rem;
+  padding: 0 1rem 0.5rem;
 
   h3, p {
     margin: 0.5rem 0;
@@ -24,6 +25,10 @@ const Content = styled.div`
   }
 `;
 
+const ReadMore = styled(Link)`
+  white-space: nowrap;
+`;
+
 const ProjectPreview = ({ title, slug, image, description, tags }) => (
   <Container>
     <Link to={`/projects/${slug}`}>
@@ -31,7 +36,8 @@ const ProjectPreview = ({ title, slug, image, description, tags }) => (
     </Link>
     <Content>
       <h3>{title}</h3>
-      <p>{description} <Link to={`/projects/${slug}`}>Read More →</Link></p>
+      <p>{description} <ReadMore to={`/projects/${slug}`}>Read More →</ReadMore></p>
+      {tags.map(tag => <Tag title={tag} key={tag} />)}
     </Content>
   </Container>
 );

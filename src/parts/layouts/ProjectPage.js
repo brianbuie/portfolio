@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '@parts/layouts/MainLayout';
 import Author from '@parts/Author';
+import MoreProjects from '@parts/MoreProjects';
 
 const Styles = styled.div`
   header {
@@ -20,11 +21,12 @@ const Styles = styled.div`
   }
 `;
 
-const ProjectPage = ({ children }) => (
+const ProjectPage = ({ children, location }) => (
   <Layout>
     <Styles>
       {children}
       <Author />
+      <MoreProjects location={location} />
     </Styles>
   </Layout>
 );

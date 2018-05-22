@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '@parts/theme';
+import ContactMe from '@parts/ContactMe';
 
 const Container = styled.div`
   display: flex;
@@ -21,10 +22,11 @@ const LeftColumn = styled.div`
 const RightColumn = styled.div`
   width: 75%;
   h4 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
   p {
     font-size: 80%;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -37,6 +39,7 @@ const Author = ({  }) => (
       <RightColumn>
         <h4>People call me Brian</h4>
         <p>I'm a Kansas City based full-stack Javascript developer. On the rare occasion I'm not programming, I'm probably riding my bike or eating pizza (still trying to figure out how to do those at the same time).</p>
+        <ContactMe justify="flex-start"/>
       </RightColumn>
     </Container>
   </section>
