@@ -10,7 +10,7 @@ injectGlobal`
   }
 
   html {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.75;
     font-family: 'Khula', sans-serif;
     background-color: ${theme.colors.bkg};

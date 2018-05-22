@@ -8,6 +8,8 @@ const LogoContainer = styled.div`
   top: 0;
   left: 0;
   width: 250px;
+  background: ${theme.colors.blue};
+  clip-path: polygon(0 0, 0% 100%, 70% 0%);
   svg {
     width: 100%;
     height: 100%;
@@ -15,7 +17,7 @@ const LogoContainer = styled.div`
       fill: ${theme.colors.bkg};
     }
     .background {
-      fill: ${theme.colors.blue};
+      fill: none;
     }
     .buoy {
       fill: ${theme.colors.orange};

@@ -5,8 +5,11 @@ import ProjectPage from '@parts/layouts/ProjectPage';
 import Video from '@parts/ui/Video';
 import Image from '@parts/ui/Image';
 
+const HeaderFallback = styled.div`
+  background-color: black;
+`;
+
 const Header = styled.header`
-  background-color: ${theme.colors.blue};
   background: url('https://res.cloudinary.com/brianbuie/image/upload/f_auto/v1526869101/carousel-background_mdjz8x.png');
   background-size: cover;
   margin-bottom: 3rem;
@@ -18,9 +21,11 @@ const Header = styled.header`
 
 export default () => (
   <ProjectPage>
-    <Header>
-      <h1>CSS Carousel</h1>
-    </Header>
+    <HeaderFallback>
+      <Header>
+        <h1>CSS Carousel</h1>
+      </Header>
+    </HeaderFallback>
     <section>
       <h3>Background</h3>
       <p>When building out the content pages on AMCTheatres.com, we needed a way to display the movie poster carousel found on other parts of the site, but with custom content under each film.</p>
@@ -48,7 +53,7 @@ export default () => (
       <h3>Flexibility</h3>
       <p><strong>Pro:</strong> Since the sizes are fluid, we've been able to use it for other items that aren't the same size as movie posters.</p>
       <figure>
-        <Image publicId="amc-history_x1gemx" alt="AMC History" />
+        <Image publicId="amc-history_x1gemx" transforms="c_scale,f_auto,q_100,w_850" alt="AMC History" />
         <figcaption>A different aspect ratio for the content on the <a href="https://www.amctheatres.com/corporate/amc-history" target="_blank">AMC History page</a>.</figcaption>
       </figure>
       <p><strong>Con:</strong> By using a lot of "nth-type" pseudo-selectors, the HTML is extremely rigid. It's really easy to accidentally misplace an element and break the whole carousel.</p>

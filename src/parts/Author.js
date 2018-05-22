@@ -24,7 +24,7 @@ const RightColumn = styled.div`
     margin-bottom: 0.25rem;
   }
   p {
-    font-size: 75%;
+    font-size: 80%;
   }
 `;
 

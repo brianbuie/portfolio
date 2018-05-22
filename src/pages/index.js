@@ -1,23 +1,30 @@
 import React from "react";
 import styled from "styled-components";
+import projects from '@src/projects';
 import Layout from '@parts/layouts/MainLayout';
-import Link from 'gatsby-link';
+import ProjectPreview from '@parts/ProjectPreview';
 
 const Container = styled.div`
-  margin: 3rem auto;
-  max-width: 600px;
+  padding: 1.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
+`;
+
+const Header = styled.div`
+  padding: 3rem 0;
+  text-align: center;
 `;
 
 export default () => (
   <Layout>
+    <Header>
+      <h1>What I've Been Working On</h1>
+    </Header>
     <Container>
-      <h1>Neato</h1>
-      <p><Link to="/projects/css-carousel">CSS Carousel</Link></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      {projects.map(project => <ProjectPreview key={project.slug} {...project} />)}
     </Container>
   </Layout>
 );
