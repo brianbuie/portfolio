@@ -3,10 +3,14 @@ import styled from 'styled-components';
 import Image from '@parts/ui/Image';
 
 const Header = styled.header`
+  padding: 5rem 1.5rem;
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
   background-color: ${props => props.fallbackColor || 'transparent'};
+  h1 {
+    text-align: center;
+  }
 `;
 
 const Content = styled.div`
@@ -28,7 +32,7 @@ const HeaderImage = styled(Image)`
 
 const Hero = ({ image, children, fallbackColor }) => (
   <Header fallbackColor={fallbackColor}>
-    <HeaderImage id={image} transforms={['c_fill', 'g_center']} width={1200} height={600} />
+    {image && <HeaderImage id={image} transforms={['c_fill', 'g_center']} width={1200} height={600} />}
     <Content>{children}</Content>
   </Header>
 );

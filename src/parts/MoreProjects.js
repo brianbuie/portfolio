@@ -13,8 +13,9 @@ const Container = styled.div`
 `;
 
 const MoreProjects = ({ location }) => {
-  const activeIndex = projects.findIndex(project => project.slug === location.pathname.replace(/(.+projects\/)/g, ''));
-  const availableProjects = projects.filter(project => project.slug !== location.pathname.replace(/(.+projects\/)/g, ''));
+  const activeSlug = location.pathname.replace(/(.+projects\/)/g, '');
+  const activeIndex = projects.findIndex(project => project.slug === activeSlug);
+  const availableProjects = projects.filter(project => project.slug !== activeSlug);
   if (!availableProjects.length) return null;
   return <Container>{availableProjects.map(project => <ProjectPreview key={project.slug} {...project} />)}</Container>;
 };

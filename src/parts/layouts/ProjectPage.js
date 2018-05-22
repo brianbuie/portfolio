@@ -5,10 +5,6 @@ import Author from '@parts/Author';
 import MoreProjects from '@parts/MoreProjects';
 
 const Styles = styled.div`
-  header {
-    padding: 5rem 1.5rem;
-  }
-
   h1,
   h2 {
     text-align: center;
