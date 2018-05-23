@@ -7,8 +7,9 @@ import Author from '@parts/Author';
 import MoreProjects from '@parts/MoreProjects';
 
 const ProjectPage = ({ children, location }) => {
+  console.log(location);
   const activeSlug = location.pathname.replace(/(.+projects\/)/g, '');
-  const activeProject = projects.find(project => project.slug === activeSlug) || {};
+  const activeProject = projects.find(project => project.slug === activeSlug);
   const { title, description, image } = activeProject;
   return (
     <Layout>

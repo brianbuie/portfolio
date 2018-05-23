@@ -9,21 +9,21 @@ const Meta = ({ title, description, imageId }) => {
       {title && (
         <Helmet>
           <title>{`${title} | Brian Buie`}</title>
-          <meta name="og:title" content={`${title} | Brian Buie`} />
-          <meta name="twitter:title" content={`${title} | Brian Buie`} />
+          <meta property="og:title" content={`${title} | Brian Buie`} />
+          <meta property="twitter:title" content={`${title} | Brian Buie`} />
         </Helmet>
       )}
       {description && (
         <Helmet>
           <meta name="description" content={description} />
-          <meta name="og:description" content={description} />
-          <meta name="twitter:description" content={description} />
+          <meta property="og:description" content={description} />
+          <meta property="twitter:description" content={description} />
         </Helmet>
       )}
       {imageId && (
         <Helmet>
-          <meta name="og:image" content={previewImage} />
-          <meta name="twitter:image" content={previewImage} />
+          <meta property="og:image" content={previewImage} />
+          <meta property="twitter:image" content={previewImage} />
         </Helmet>
       )}
     </React.Fragment>
