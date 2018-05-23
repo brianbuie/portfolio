@@ -3,6 +3,7 @@ import styled, { injectGlobal } from 'styled-components';
 import theme from '@parts/theme';
 import Menu from '@parts/Menu';
 import Footer from '@parts/Footer';
+import Meta from '@parts/Meta';
 
 injectGlobal`
   * {
@@ -21,12 +22,26 @@ injectGlobal`
     margin: 0;
   }
 
-  h1, h2, h3, h4, h5 {
+  section {
+    max-width: 740px;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  h1, h2, h3, h4, h5, strong {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-style: italic;
     color: ${theme.colors.blue};
+  }
+
+  h1, h2, h3, h4, h5 {
     margin: 0 0 1rem;
+  }
+
+  h1, h2 {
+    text-align: center;
   }
 
   p, figure {
@@ -37,11 +52,7 @@ injectGlobal`
     font-size: 75%;
     font-style: italic;
     text-align: center;
-  }
-
-  strong {
-    font-family: 'Montserrat';
-    color: ${theme.colors.blue};
+    margin-top: 0.5rem;
   }
 
   a {
@@ -62,10 +73,12 @@ const Content = styled.main`
 
 const Layout = ({ children }) => (
   <Body>
+    <Meta
+      title="What I've Been Working On"
+      description="I'm a Kansas City based full-stack Javascript developer, specializing in React and Node."
+    />
     <Menu />
-    <Content>
-      {children}
-    </Content>
+    <Content>{children}</Content>
     <Footer />
   </Body>
 );

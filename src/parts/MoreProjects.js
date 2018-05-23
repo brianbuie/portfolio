@@ -12,10 +12,8 @@ const Container = styled.div`
   padding: 3rem 0;
 `;
 
-const MoreProjects = ({ location }) => {
-  const activeSlug = location.pathname.replace(/(.+projects\/)/g, '');
-  const activeIndex = projects.findIndex(project => project.slug === activeSlug);
-  const availableProjects = projects.filter(project => project.slug !== activeSlug);
+const MoreProjects = ({ activeProject }) => {
+  const availableProjects = projects.filter(project => !activeProject || project.slug !== activeProject.slug);
   if (!availableProjects.length) return null;
   return <Container>{availableProjects.map(project => <ProjectPreview key={project.slug} {...project} />)}</Container>;
 };

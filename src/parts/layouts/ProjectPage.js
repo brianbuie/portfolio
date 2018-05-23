@@ -1,35 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import projects from '@src/projects';
+import Meta from '@parts/Meta';
 import Layout from '@parts/layouts/MainLayout';
 import Author from '@parts/Author';
 import MoreProjects from '@parts/MoreProjects';
 
-const Styles = styled.div`
-  h1,
-  h2 {
-    text-align: center;
-  }
-
-  section {
-    max-width: 740px;
-    padding: 1.5rem;
-    padding-bottom: 0;
-    margin: 0 auto;
-  }
-
-  figcaption {
-    margin-top: 0.5rem;
-  }
-`;
-
-const ProjectPage = ({ children, location }) => (
-  <Layout>
-    <Styles>
+const ProjectPage = ({ children, location }) => {
+  const activeSlug = location.pathname.replace(/(.+projects\/)/g, '');
+  const activeProject = projects.find(project => project.slug === activeSlug);
+  const { title, description, image } = activeProject;
+  return (
+    <Layout>
+      <Meta title={title} description={description} imageId={image} />
       {children}
       <Author />
-      <MoreProjects location={location} />
-    </Styles>
-  </Layout>
-);
+      <MoreProjects activeProject={activeProject} />
+    </Layout>
+  );
+};
 
 export default ProjectPage;
