@@ -17,15 +17,17 @@ const Meta = ({ title, description, imageId }) => {
         <Helmet>
           <meta name="description" content={description} />
           <meta property="og:description" content={description} />
-          <meta property="twitter:description" content={description} />
         </Helmet>
       )}
       {imageId && (
         <Helmet>
           <meta property="og:image" content={previewImage} />
-          <meta property="twitter:image" content={previewImage} />
         </Helmet>
       )}
+      <Helmet>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@brian_buie" />
+      </Helmet>
     </React.Fragment>
   );
 };

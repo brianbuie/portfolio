@@ -7,7 +7,6 @@ Articles/Projects
   Scripted.fun
 
 MVP
-  Page titles & meta tags
   og & twitter tags
   favicon & icons
   google analytics
