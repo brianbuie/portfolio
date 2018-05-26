@@ -7,7 +7,6 @@ Articles/Projects
   Scripted.fun
 
 MVP
-  og & twitter tags
   favicon & icons
   google analytics
   contact form

@@ -3,8 +3,8 @@ const theme = {
     bkg: '#e8e8e8',
     blue: '#4c627b',
     orange: '#d68148',
-    text: '#384d54',
+    text: '#384d54'
   }
-}
+};
 
-export default theme;
+module.exports = theme;
