@@ -1,32 +1,40 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-8e56f998d0c025e9e96f.js",
-      "component---src-pages-index-js-8e56f998d0c025e9e96f.js.map"
+      "component---src-pages-index-js-7b4f50e7e940c83e2700.js",
+      "component---src-pages-index-js-7b4f50e7e940c83e2700.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-a59ca176578522f68ac3.js",
-      "component---src-pages-404-js-a59ca176578522f68ac3.js.map"
+      "component---src-pages-404-js-2f8c1622c339f04813f4.js",
+      "component---src-pages-404-js-2f8c1622c339f04813f4.js.map"
     ],
     "commons": [
-      "commons-ea0daed84a7c7abc098a.js",
-      "commons-ea0daed84a7c7abc098a.js.map"
+      "commons-a40139bd3a882bc5e5d2.js",
+      "commons-a40139bd3a882bc5e5d2.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-projects-css-carousel-js": [
-      "component---src-pages-projects-css-carousel-js-41dea3ec48ebfdf0b37b.js",
-      "component---src-pages-projects-css-carousel-js-41dea3ec48ebfdf0b37b.js.map"
+      "component---src-pages-projects-css-carousel-js-e7e1fce5e9b7f8f8f423.js",
+      "component---src-pages-projects-css-carousel-js-e7e1fce5e9b7f8f8f423.js.map"
     ],
     "app": [
-      "app-6fe5c061e5f1e1c5bb08.js",
-      "app-6fe5c061e5f1e1c5bb08.js.map"
+      "app-1546fbce5deab33ae8ec.js",
+      "app-1546fbce5deab33ae8ec.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
