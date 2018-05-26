@@ -7,12 +7,12 @@ Articles/Projects
   Scripted.fun
 
 MVP
-  favicon & icons
   google analytics
   contact form
   3 projects
 
 Features
+  improve progressive image loading to happen before visible
   social sharing buttons
   tag filtering
   separate preview types

@@ -4,7 +4,7 @@ import ContactMe from '@parts/ContactMe';
 
 const Container = styled.footer`
   padding: 3rem 0 1rem;
-  p {    
+  p {
     text-align: center;
     font-size: 75%;
     opacity: 0.8;
@@ -12,10 +12,15 @@ const Container = styled.footer`
   }
 `;
 
-const Footer = ({  }) => (
+const Footer = ({}) => (
   <Container>
     <ContactMe />
-    <p>How was this site built? <a href="https://github.com/brianbuie/portfolio" target="_blank">Check out the repo!</a></p>
+    <p>
+      How was this site built?{' '}
+      <a href="https://github.com/brianbuie/portfolio" target="_blank">
+        Check out the repo!
+      </a>
+    </p>
   </Container>
 );
 

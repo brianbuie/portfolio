@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from '@src/theme';
+import Modal from '@parts/ui/Modal';
 import Github from '@assets/github.svg';
 import LinkedIn from '@assets/linkedin.svg';
 import Email from '@assets/email.svg';
@@ -31,9 +32,15 @@ const ContactMe = ({ justify }) => (
     <a href="https://www.linkedin.com/in/brian-buie-49921872/" target="_blank" title="LinkedIn">
       <LinkedIn />
     </a>
-    <a href="mailto:brian@brianbuie.com" title="Email Brian@BrianBuie.com">
-      <Email />
-    </a>
+    <Modal
+      Toggler={({ toggle }) => (
+        <a href="" onClick={toggle}>
+          <Email />
+        </a>
+      )}
+    >
+      Modal Body Here
+    </Modal>
   </Icons>
 );
 
