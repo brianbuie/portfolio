@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
+import { withPrefix } from 'gatsby-link';
 
 const Meta = ({ title, description, imageId }) => {
   const previewImage = `https://res.cloudinary.com/brianbuie/image/upload/c_crop,f_auto,g_center,w_1200,h_630/w_500,c_scale,g_north_west,l_preview-badge_nlqo8g/v1526932723/${imageId}.jpg`;
@@ -25,7 +26,7 @@ const Meta = ({ title, description, imageId }) => {
         </Helmet>
       )}
       <Helmet>
-        <link rel="icon" type="image/png" href="/portfolio/favicon.ico" />
+        <link rel="icon" type="image/png" href={withPrefix('/favicon.png')} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@brian_buie" />
       </Helmet>

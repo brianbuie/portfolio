@@ -3,7 +3,7 @@
   "description": "My Portfolio",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop --prefix-paths",
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
