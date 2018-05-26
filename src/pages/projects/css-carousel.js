@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectPage from '@parts/layouts/ProjectPage';
-import { Hero, Image, Video } from '@parts/ui';
+import { Hero, Image, Link, Video } from '@parts/ui';
 
 const Headline = styled.h1`
   color: white;
@@ -30,19 +30,14 @@ export default ({ location }) => (
       <figure>
         <Video id="css-carousel-demo_pfefp3" width={640} height={480} />
         <figcaption>
-          The CSS Carousel being used on the{' '}
-          <a href="https://www.amctheatres.com/amc-educates" target="_blank">
-            AMC Educates page
-          </a>.
+          The CSS Carousel being used on the <Link href="https://www.amctheatres.com/amc-educates">AMC Educates page</Link>.
         </figcaption>
       </figure>
       <p>
         By using hidden radio buttons, the carousel position and active item styles are determined by which radio button was
         selected. Each movie poster was wrapped in a label for the corresponding radio input, so when a poster was clicked, that
         radio button would be selected and trigger CSS transitions between states.{' '}
-        <a href="https://github.com/brianbuie/cssCarousel/blob/master/csscarousel.css" target="_blank">
-          Check out the CSS →
-        </a>
+        <Link href="https://github.com/brianbuie/cssCarousel/blob/master/csscarousel.css">Check out the CSS →</Link>
       </p>
     </section>
     <section>
@@ -71,9 +66,7 @@ export default ({ location }) => (
         <Image id="amc-history_x1gemx" width={850} height={468} alt="AMC History" />
         <figcaption>
           A different aspect ratio for the content on the{' '}
-          <a href="https://www.amctheatres.com/corporate/amc-history" target="_blank">
-            AMC History page
-          </a>.
+          <Link href="https://www.amctheatres.com/corporate/amc-history">AMC History page</Link>.
         </figcaption>
       </figure>
       <p>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ContactMe from '@parts/ContactMe';
+import { Link } from '@parts/ui';
 
 const Container = styled.footer`
   padding: 3rem 0 1rem;
@@ -16,10 +17,7 @@ const Footer = ({}) => (
   <Container>
     <ContactMe />
     <p>
-      How was this site built?{' '}
-      <a href="https://github.com/brianbuie/portfolio" target="_blank">
-        Check out the repo!
-      </a>
+      How was this site built? <Link href="https://github.com/brianbuie/portfolio">Check out the repo!</Link>
     </p>
   </Container>
 );

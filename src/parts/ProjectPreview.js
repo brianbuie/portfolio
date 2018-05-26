@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
-import Image from '@parts/ui/Image';
-import Tag from '@parts/ui/Tag';
+import { Image, Link, Tag } from '@parts/ui';
 
 const Article = styled.article`
   display: flex;

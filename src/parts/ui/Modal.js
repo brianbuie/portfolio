@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Toggle } from 'react-powerplug';
 import posed, { PoseGroup } from 'react-pose';
+import { Link } from '@parts/ui';
 
 const Overlay = styled.div`
   position: absolute;
@@ -47,28 +48,13 @@ const Modal = ({ children, Toggler }) => (
   <Toggle initial={false}>
     {({ on, toggle }) => (
       <React.Fragment>
-        {Toggler && (
-          <Toggler
-            toggle={e => {
-              e.preventDefault();
-              toggle();
-            }}
-          />
-        )}
+        {Toggler && <Toggler toggle={toggle} />}
         <PoseGroup>
           {on && <OverlayAnimated key="overlay" />}
           {on && (
             <ContentAnimated key="content">
               {children}
-              <a
-                href=""
-                onClick={e => {
-                  e.preventDefault();
-                  toggle();
-                }}
-              >
-                &times;
-              </a>
+              <Link onClick={toggle}>&times;</Link>
             </ContentAnimated>
           )}
         </PoseGroup>
