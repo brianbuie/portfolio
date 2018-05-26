@@ -25,7 +25,7 @@ const Meta = ({ title, description, imageId }) => {
         </Helmet>
       )}
       <Helmet>
-        <link rel="icon" type="image/png" href="/portfolio/favicon.png" />
+        <link rel="icon" type="image/png" href="/portfolio/favicon.ico" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@brian_buie" />
       </Helmet>

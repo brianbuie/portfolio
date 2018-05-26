@@ -69,7 +69,8 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    'gatsby-plugin-offline'
   ],
   pathPrefix: '/portfolio'
 };
