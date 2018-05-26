@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '@parts/theme';
+import theme from '@src/theme';
 import ContactMe from '@parts/ContactMe';
 import Image from '@parts/ui/Image';
 

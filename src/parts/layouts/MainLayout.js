@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
-import theme from '@parts/theme';
-import Menu from '@parts/Menu';
+import theme from '@src/theme';
+import Lockup from '@parts/Lockup';
 import Footer from '@parts/Footer';
 import Meta from '@parts/Meta';
 
@@ -77,7 +77,7 @@ const Layout = ({ children }) => (
       title="What I've Been Working On"
       description="I'm a Kansas City based full-stack Javascript developer, specializing in React and Node."
     />
-    <Menu />
+    <Lockup />
     <Content>{children}</Content>
     <Footer />
   </Body>

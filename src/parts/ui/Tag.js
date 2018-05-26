@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '@parts/theme';
+import theme from '@src/theme';
 
 const Container = styled.span`
   font-size: 70%;
@@ -15,8 +15,6 @@ const Container = styled.span`
   margin-right: 0.5rem;
 `;
 
-const Tag = ({ title }) => (
-  <Container>{title}</Container>
-);
+const Tag = ({ title }) => <Container>{title}</Container>;
 
 export default Tag;

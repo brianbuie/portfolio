@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '@parts/theme';
+import Link from 'gatsby-link';
+import theme from '@src/theme';
 import LogoLockupSVG from '@assets/logolockup.svg';
 
-const LogoContainer = styled.div`
+const Nav = styled.nav`
   position: fixed;
   z-index: 20;
   top: 0;
   left: 0;
   width: 250px;
+  @media (max-width: 700px) {
+    width: 175px;
+  }
   background: ${theme.colors.blue};
   clip-path: polygon(0 0, 0% 100%, 70% 0%);
   svg {
@@ -27,9 +31,11 @@ const LogoContainer = styled.div`
 `;
 
 const Lockup = () => (
-  <LogoContainer>
-    <LogoLockupSVG />
-  </LogoContainer>
+  <Nav>
+    <Link to="/">
+      <LogoLockupSVG />
+    </Link>
+  </Nav>
 );
 
 export default Lockup;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '@parts/theme';
 import ProjectPage from '@parts/layouts/ProjectPage';
 import Video from '@parts/ui/Video';
 import Image from '@parts/ui/Image';

@@ -8,8 +8,11 @@ Articles/Projects
 
 MVP
   Page titles & meta tags
+  og & twitter tags
+  favicon & icons
   google analytics
   contact form
+  3 projects
 
 Features
   social sharing buttons

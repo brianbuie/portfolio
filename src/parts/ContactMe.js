@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import theme from '@parts/theme';
+import theme from '@src/theme';
 import Github from '@assets/github.svg';
 import LinkedIn from '@assets/linkedin.svg';
 import Email from '@assets/email.svg';
@@ -26,7 +26,7 @@ const Icons = styled.div`
 const ContactMe = ({ justify }) => (
   <Icons justify={justify}>
     <a href="https://github.com/brianbuie" target="_blank" title="Github">
-      <Github style={{ marginLeft: 0 }}/>
+      <Github style={{ marginLeft: 0 }} />
     </a>
     <a href="https://www.linkedin.com/in/brian-buie-49921872/" target="_blank" title="LinkedIn">
       <LinkedIn />
