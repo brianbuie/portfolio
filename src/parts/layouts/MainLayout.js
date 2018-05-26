@@ -44,15 +44,19 @@ injectGlobal`
     text-align: center;
   }
 
-  p, figure {
+  p {
     margin: 0 0 1.5rem 0;
+  }
+
+  figure {
+    margin: 0 -1.5rem 1.5rem -1.5rem;
   }
 
   figcaption {
     font-size: 75%;
     font-style: italic;
     text-align: center;
-    margin-top: 0.5rem;
+    margin: 0.5rem 1.5rem;
   }
 
   a {

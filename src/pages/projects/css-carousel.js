@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectPage from '@parts/layouts/ProjectPage';
-import Video from '@parts/ui/Video';
-import Image from '@parts/ui/Image';
-import Hero from '@parts/ui/Hero';
+import { Hero, Image, Video } from '@parts/ui';
 
 const Headline = styled.h1`
   color: white;

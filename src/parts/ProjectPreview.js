@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import Image from '@parts/ui/Image';
 import Tag from '@parts/ui/Tag';
 
-const Container = styled.div`
+const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +31,7 @@ const ReadMore = styled(Link)`
 `;
 
 const ProjectPreview = ({ title, slug, image, description, tags }) => (
-  <Container>
+  <Article>
     <Link to={`/projects/${slug}`}>
       <Image id={image} transforms={['c_fill', 'g_center']} width={400} height={250} alt={title} />
     </Link>
@@ -42,7 +42,7 @@ const ProjectPreview = ({ title, slug, image, description, tags }) => (
       </p>
       {tags.map(tag => <Tag title={tag} key={tag} />)}
     </Content>
-  </Container>
+  </Article>
 );
 
 export default ProjectPreview;
