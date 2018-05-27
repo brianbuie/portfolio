@@ -39,7 +39,11 @@ const ContactMe = ({ justify }) => (
         </Link>
       )}
     >
-      Modal Body Here
+      {({ toggle }) => (
+        <React.Fragment>
+          Content goes here. <Link onClick={toggle}>Close</Link>
+        </React.Fragment>
+      )}
     </Modal>
   </Icons>
 );

@@ -3450,6 +3450,10 @@ get-port@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
 
+get-scrollbar-width@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/get-scrollbar-width/-/get-scrollbar-width-1.0.4.tgz#4e18593af5333eed2152d9a9bd329e8d2715f863"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"

@@ -20,6 +20,7 @@ injectGlobal`
 
   body {
     margin: 0;
+    height: 100vh;
   }
 
   section {
