@@ -5,6 +5,7 @@ import { Link, Modal } from '@parts/ui';
 import Github from '@assets/github.svg';
 import LinkedIn from '@assets/linkedin.svg';
 import Email from '@assets/email.svg';
+import WriteMeALetter from '@parts/WriteMeALetter';
 
 const Icons = styled.div`
   display: flex;
@@ -39,11 +40,7 @@ const ContactMe = ({ justify }) => (
         </Link>
       )}
     >
-      {({ toggle }) => (
-        <React.Fragment>
-          Content goes here. <Link onClick={toggle}>Close</Link>
-        </React.Fragment>
-      )}
+      {({ toggle }) => <WriteMeALetter toggleModal={toggle} />}
     </Modal>
   </Icons>
 );

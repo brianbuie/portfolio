@@ -19,6 +19,7 @@
     "gatsby-plugin-react-svg": "^1.1.1",
     "gatsby-plugin-styled-components": "^2.0.11",
     "get-scrollbar-width": "^1.0.4",
+    "query-string": "^6.1.0",
     "react-helmet": "^5.2.0",
     "react-pose": "^1.6.4",
     "react-powerplug": "^0.1.5",
